@@ -1,2 +1,21 @@
 <p>hello everyone </p>
 <p> i am unixer , and this is my web pages </p>
+
+ <link rel="stylesheet" href="editor.md/css/editormd.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="editor.md/lib/marked.min.js"></script>
+    <script src="editor.md/lib/prettify.min.js"></script>
+    <script src="editor.md/editormd.js"></script>
+
+  <script>
+        var editor = editormd("editor", {
+            // 这里的尺寸必须在这里设置，设置样式会被 editormd 自动覆盖
+            width: "100%",
+            // 设置高度
+            height: "500px",
+            // 编辑器中初始内容
+            markdown: "# 在这里写下一篇博客",
+            // 指定插件路径
+            path: "editor.md/lib/"
+        });
+    </script>
