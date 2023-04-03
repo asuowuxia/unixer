@@ -1,21 +1,18 @@
-<p>hello everyone </p>
-<p> i am unixer , and this is my web pages </p>
+<link rel="stylesheet" href="editormd/css/editormd.css" />
+<div id="test-editor">
+    <textarea style="display:none;">### 关于 Editor.md
 
- <link rel="stylesheet" href="editor.md/css/editormd.min.css">
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="editor.md/lib/marked.min.js"></script>
-    <script src="editor.md/lib/prettify.min.js"></script>
-    <script src="editor.md/editormd.js"></script>
-
-  <script>
-        var editor = editormd("editor", {
-            // 这里的尺寸必须在这里设置，设置样式会被 editormd 自动覆盖
-            width: "100%",
-            // 设置高度
-            height: "500px",
-            // 编辑器中初始内容
-            markdown: "# 在这里写下一篇博客",
-            // 指定插件路径
-            path: "editor.md/lib/"
+**Editor.md** 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
+    </textarea>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="editormd/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor", {
+            // width  : "100%",
+            // height : "100%",
+            path   : "editormd/lib/"
         });
-    </script>
+    });
+</script>
