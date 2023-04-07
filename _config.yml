@@ -1,0 +1,4 @@
+deploy:
+  type: git
+  repository: git@github.com:unixer/asuowuxia.github.io.git
+  branch: main
